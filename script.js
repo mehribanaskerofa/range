@@ -2,17 +2,17 @@ const valuenumber=document.querySelector('.number')
 
 const range=document.querySelector('.div')
 
-const maxvaluenumber=document.querySelector('.faiz')
-
+const maxvaluenumber=document.querySelector('#faiz')
+console.log(maxvaluenumber.value)
 
 valuenumber.addEventListener('change',function(e){
     const value=e.target.value;
 
-    if(value<=51){
+    if(value<=(maxvaluenumber/2)){
     range.style.width=value+'%'//+': color:red'
     range.style.background='red'
     }
-    else if(value>51 && value<=90){
+    else if(value>(maxvaluenumber/2) && value<((maxvaluenumber*90)/100)){
     range.style.width=value+'%'//+': color:yellow'
     range.style.background='yellow'
     }
