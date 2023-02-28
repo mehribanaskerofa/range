@@ -2,7 +2,7 @@ const valuenumber=document.querySelector('.number')
 
 const range=document.querySelector('.div')
 
-const maxvaluenumber=document.querySelector('#faiz')
+const maxvaluenumber=document.querySelector('#faiz').value
 console.log(maxvaluenumber.value)
 
 valuenumber.addEventListener('change',function(e){
